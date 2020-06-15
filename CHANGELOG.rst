@@ -9,6 +9,8 @@ All notable changes to the ``topology`` project will be documented in this file.
 
 Added
 =====
+- Added tags decorator to run tests by type and size.
+- Added unit tests, increasing coverage to 85%.
 
 Changed
 =======
