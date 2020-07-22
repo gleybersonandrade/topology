@@ -11,6 +11,8 @@ Added
 =====
 - Added tags decorator to run tests by type and size.
 - Added unit tests, increasing coverage to 85%.
+- Added persistence for LLDP administrative changes.
+- Added persistence for LINK administrative changes.
 
 Changed
 =======
