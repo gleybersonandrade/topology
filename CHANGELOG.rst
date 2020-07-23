@@ -6,13 +6,8 @@ All notable changes to the ``topology`` project will be documented in this file.
 
 [UNRELEASED] - Under development
 ********************************
-
 Added
 =====
-- Added tags decorator to run tests by type and size.
-- Added unit tests, increasing coverage to 85%.
-- Added persistence for LLDP administrative changes.
-- Added persistence for LINK administrative changes.
 
 Changed
 =======
@@ -25,6 +20,20 @@ Removed
 
 Fixed
 =====
+
+Security
+========
+
+
+[3.6.2] - 2020-07-23
+********************
+
+Added
+=====
+- Added persistence for Link and LLDP administrative changes.
+- Added unit tests, increasing coverage to 85%.
+- Added tags decorator to run tests by type and size.
+
 
 [3.6.1] - 2020-05-21
 ********************
