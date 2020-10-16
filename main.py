@@ -605,15 +605,16 @@ class Main(KytosNApp):  # pylint: disable=too-many-public-methods
         try:
             link = self._get_link_or_create(interface_a, interface_b)
         except KytosLinkCreationError as err:
-            log.error(f'Error on creating link: {err}.')
-        else:
-            interface_a.update_link(link)
-            interface_b.update_link(link)
+            log.error(f'Error creating link: {err}.')
+            return
 
-            interface_a.nni = True
-            interface_b.nni = True
+        interface_a.update_link(link)
+        interface_b.update_link(link)
 
-            self.notify_topology_update()
+        interface_a.nni = True
+        interface_b.nni = True
+
+        self.notify_topology_update()
 
     # def add_host(self, event):
     #    """Update the topology with a new Host."""
